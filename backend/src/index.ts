@@ -12,7 +12,7 @@ app.post('/api/v1/user/signin', (c) => {
 
 
 app.post('/api/v1/blog', (c) => {
-  return c.text('Hello Hono!')
+  return c.text('Hello Hono22!')
 })
 
 app.put('/api/v1/blog', (c) => {
@@ -21,10 +21,12 @@ app.put('/api/v1/blog', (c) => {
 
 
 app.get('/api/v1/blog', (c) => {
-  return c.text('Hello Hono!')
+  return c.text('Hello Hono2222!')
 })
 
 app.put('/api/v1/blog/bulk', (c) => {
   return c.text('Hello Hono!')
 })
 export default app
+
+
