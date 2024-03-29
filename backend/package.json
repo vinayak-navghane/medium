@@ -7,6 +7,7 @@
     "@prisma/client": "^5.11.0",
     "@prisma/extension-accelerate": "^1.0.0",
     "@vinayak-navghane/medium-common-project": "^1.1.1",
+    "@vinayak-navghane/npm-package-signupinput-medium": "^1.0.0",
     "hono": "^4.1.4",
     "prisma": "^5.11.0"
   },
