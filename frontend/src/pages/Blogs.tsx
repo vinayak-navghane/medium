@@ -1,8 +1,11 @@
+import { Appbar } from "../components/Appbar"
 import { BlogCard } from "../components/BlogCard"
 
 
 export const Blogs = () => {
-    return <div className="flex justify-center">
+    return <div >
+        <Appbar/>
+        <div className="flex justify-center">
         <div className=" max-w-xl">
             <BlogCard
                 authorName={"Vinayak"}
@@ -22,6 +25,7 @@ export const Blogs = () => {
                 content={"How an ugly Single page website maked 5000 a month with affiliate marketing How an ugly Single page website maked 5000 a month with affiliate marketing"}
                 publishedDate={"2nd Feb 2024"}
             />
+        </div>
         </div>
     </div>
 }
