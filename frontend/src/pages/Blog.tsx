@@ -7,9 +7,6 @@ export const Blog = () => {
     const {loading, blog} = useBlog({
         id: id || ""
     });
-    
-
-//  console.log(blog?.author.name)
 
     if(loading){
         <div>

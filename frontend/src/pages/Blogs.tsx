@@ -20,9 +20,9 @@ export const Blogs = () => {
                 {blogs.map(blog => <BlogCard
                     id={blog.id}
                     authorName={blog.author.name || "Anonymous"}
-                    title={"How an ugly Single page website maked 5000 a month with affiliate marketing"}
-                    content={"How an ugly Single page website maked 5000 a month with affiliate marketing How an ugly Single page website maked 5000 a month with affiliate marketing"}
-                    publishedDate={"2nd Feb 2024"}
+                    title={blog.title}
+                    content={blog.content}
+                    publishedDate={blog.Date}
                 />)}
 
 

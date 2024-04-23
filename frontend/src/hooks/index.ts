@@ -4,6 +4,7 @@ import { BACKEND_URL } from "../config"
 
 
 export interface Blog {
+        "Date": string,
         "content": string
         "title": string
         "id": number
