@@ -1,7 +1,7 @@
 import { Hono } from 'hono'
 import { PrismaClient } from '@prisma/client/edge'
 import { withAccelerate } from '@prisma/extension-accelerate'
-import { decode, sign, verify } from 'hono/jwt'
+import {  verify } from 'hono/jwt'
 import { createBlogInput,updateBlogInput } from '@vinayak-navghane/medium-common'
 
 
@@ -60,7 +60,8 @@ blogRouter.post('/', async (c) => {
         data: {
             title: body.title,
             content: body.content,
-            authorId: Number(authorId)
+            authorId: Number(authorId),
+            Date: body.Date,
         }
     })
 
@@ -105,6 +106,7 @@ blogRouter.get('/bulk', async(c) =>{
     }).$extends(withAccelerate())
    const blogs =  await prisma.blog.findMany({
      select:{
+        Date : true,
         content:true,
         title:true,
         id:true,
@@ -133,6 +135,7 @@ blogRouter.get('/:id', async(c) => {
                 id:Number(id)
             },
             select:{
+                Date : true,
                 id:true,
                 title:true,
                 content:true,

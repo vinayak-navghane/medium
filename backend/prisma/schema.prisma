@@ -22,4 +22,5 @@ model Blog {
   title     String
   published Boolean @default(false)
   author    User @relation(fields: [authorId],references: [id])
+  Date      String   @default("01 Jan 2024")
 }
