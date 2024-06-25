@@ -14,7 +14,7 @@ export const FullBlog = ({ blog }: { blog: Blog }) => {
                         {blog.title}
                     </div>
                     <div className="text-slate-500 pt-2">
-                      {`Post on ${blog.Date}`}
+                        {`Post on ${blog.Date}`}
                     </div>
                     <div className="pt-4">
                         {blog.content}
@@ -22,7 +22,7 @@ export const FullBlog = ({ blog }: { blog: Blog }) => {
                 </div>
                 <div className="col-span-4">
                     <div className="text-slate-600 text-md">
-                       Author
+                        Author
                     </div>
                     <div className="flex">
                         <div className="pr-4 flex flex-col justify-center">
@@ -33,7 +33,7 @@ export const FullBlog = ({ blog }: { blog: Blog }) => {
                                 {blog.author.name || "Anonymous"}
                             </div>
                             <div className="pt-2 text-slate-500" >
-                                Random catch phrase about the authors ability to grab the user's attanetion
+                                Random catch phrase about the authors ability to grab the user's attention
                             </div>
                         </div>
                     </div>
